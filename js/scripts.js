@@ -104,9 +104,16 @@ function checkRoundWinner(playerPick, computerPick) {
 			computer.score++;
 		}
 
+setGamePoints();
 }
 
 function setGamePoints() {
 	playerPointsElem.innerHTML = player.score;
-	computerPointsElem.innerHTML = computer.score;
+	computerPointsElem.innerHTML = computer.score;	
 }
+/*function end() {
+	if (player.score == 10 || computer.score == 10) {
+		
+	}
+}
+function end();*/
