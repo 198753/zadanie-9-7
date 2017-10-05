@@ -114,10 +114,12 @@ function setGamePoints() {
 }
 function end() {
 	if (player.score == 1) {
-		pickElem.innerHTML = 'The winner is ' + (player.name);
-	} else if (computer.score == 3) {
+		pickElem.innerHTML = 'The winner is ' + player.name;
+	} else if (computer.score == 10) {
 		pickElem.innerHTML = 'The winner is computer';
 	}
+	gameState ='ended';
 	setGameElements();
+
 }
 
