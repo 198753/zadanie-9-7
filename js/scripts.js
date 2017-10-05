@@ -105,15 +105,19 @@ function checkRoundWinner(playerPick, computerPick) {
 		}
 
 setGamePoints();
+end();
 }
 
 function setGamePoints() {
 	playerPointsElem.innerHTML = player.score;
 	computerPointsElem.innerHTML = computer.score;	
 }
-/*function end() {
-	if (player.score == 10 || computer.score == 10) {
-		
+function end() {
+	if (player.score == 10) {
+		document.getElementById('js-playerPick').innerHTML = '"The winner is (player.name)"';
+	} else if (computer.score == 10) {
+		document.getElementById('js-playerPick').innerHTML = '"The winner is computer"';
 	}
+	setGameElements();
 }
-function end();*/
+
