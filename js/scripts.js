@@ -115,11 +115,14 @@ function setGamePoints() {
 function end() {
 	if (player.score == 1) {
 		pickElem.innerHTML = 'The winner is ' + player.name;
+		alert('play again');
 	} else if (computer.score == 10) {
 		pickElem.innerHTML = 'The winner is computer';
+		alert('play again');
 	}
-	gameState ='ended';
-	setGameElements();
+	
+	/*gameState ='ended';
+	setGameElements();*/
 
 }
 
