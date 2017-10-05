@@ -113,10 +113,10 @@ function setGamePoints() {
 	computerPointsElem.innerHTML = computer.score;	
 }
 function end() {
-	if (player.score == 10) {
-		document.getElementById('js-playerPick').innerHTML = '"The winner is (player.name)"';
-	} else if (computer.score == 10) {
-		document.getElementById('js-playerPick').innerHTML = '"The winner is computer"';
+	if (player.score == 3) {
+		pickElem.innerHTML = 'The winner is (player.name)';
+	} else if (computer.score == 3) {
+		pickElem.innerHTML = 'The winner is computer';
 	}
 	setGameElements();
 }
