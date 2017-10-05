@@ -113,8 +113,8 @@ function setGamePoints() {
 	computerPointsElem.innerHTML = computer.score;	
 }
 function end() {
-	if (player.score == 3) {
-		pickElem.innerHTML = 'The winner is (player.name)';
+	if (player.score == 1) {
+		pickElem.innerHTML = 'The winner is ' + (player.name);
 	} else if (computer.score == 3) {
 		pickElem.innerHTML = 'The winner is computer';
 	}
