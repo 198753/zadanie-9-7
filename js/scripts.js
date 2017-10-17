@@ -22,7 +22,7 @@ var gameState = 'notStarted',  //started // ended
 var newGameElem = document.getElementById('js-newGameElement'),
 	pickElem = document.getElementById('js-playerPickElement'),
 	resultsElem = document.getElementById('js-resultsTableElement');
-	winner = document.getElementById('js-winner');
+	winnerElem = document.getElementById('js-winnerElem');
 
 function setGameElements() {
 	switch(gameState) {
@@ -34,7 +34,7 @@ function setGameElements() {
 			break;
 		case 'ended':
 				newGameBtn.innerText = 'Play again';
-				winner.style.display = 'block';
+				winnerElem.style.display = 'block';
 		case 'notStarted':
 		default:
 				newGameElem.style.display = 'block';
@@ -117,13 +117,13 @@ function setGamePoints() {
 }
 function endGame() {
 	if (player.score == 3) {
-		winner.innerHTML = 'The winner is ' + player.name;
+		winnerElem.innerHTML = 'The winner is ' + player.name;
 
 		gameState ='ended';
 		setGameElements();
 
 	} else if (computer.score == 10) {
-		winner.innerHTML = 'The winner is computer';
+		winnerElem.innerHTML = 'The winner is computer';
 
 		gameState ='ended';
 		setGameElements();
