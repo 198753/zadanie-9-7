@@ -116,7 +116,7 @@ function setGamePoints() {
 	computerPointsElem.innerHTML = computer.score;	
 }
 function endGame() {
-	if (player.score == 3) {
+	if (player.score == 10) {
 		winnerElem.innerHTML = 'The winner is ' + player.name;
 
 		gameState ='ended';
