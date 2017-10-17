@@ -10,7 +10,7 @@ pickRock.addEventListener('click', function() { playerPick('rock') });
 pickPaper.addEventListener('click', function() { playerPick('paper') });
 pickScissors.addEventListener('click', function() { playerPick('scissors') });
 
-var gameState = 'notStarted',  //started // ended
+var gameState = 'notStarted',
 	player = {
 		name: '',
 		score: 0
@@ -30,7 +30,7 @@ function setGameElements() {
 				newGameElem.style.display = 'none';
 				pickElem.style.display = 'block';
 				resultsElem.style.display = 'block';
-				winner.style.display = 'none';
+				winnerElem.style.display = 'none';
 			break;
 		case 'ended':
 				newGameBtn.innerText = 'Play again';
