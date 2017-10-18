@@ -107,8 +107,8 @@ function checkRoundWinner(playerPick, computerPick) {
 			computer.score++;
 		}
 
-setGamePoints();
-endGame();
+	setGamePoints();
+	endGame();
 }
 
 function setGamePoints() {
