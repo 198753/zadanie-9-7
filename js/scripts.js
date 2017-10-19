@@ -27,19 +27,19 @@ var newGameElem = document.getElementById('js-newGameElement'),
 function setGameElements() {
 	switch(gameState) {
 		case 'started':
-				newGameElem.style.display = 'none';
-				pickElem.style.display = 'block';
-				resultsElem.style.display = 'block';
-				winnerElem.style.display = 'none';
+			newGameElem.style.display = 'none';
+			pickElem.style.display = 'block';
+			resultsElem.style.display = 'block';
+			winnerElem.style.display = 'none';
 			break;
 		case 'ended':
-				newGameBtn.innerText = 'Play again';
-				winnerElem.style.display = 'block';
+			newGameBtn.innerText = 'Play again';
+			winnerElem.style.display = 'block';
 		case 'notStarted':
 		default:
-				newGameElem.style.display = 'block';
-				pickElem.style.display = 'none';
-				resultsElem.style.display = 'none';
+			newGameElem.style.display = 'block';
+			pickElem.style.display = 'none';
+			resultsElem.style.display = 'none';
 	}
 }	
 setGameElements();
@@ -56,7 +56,7 @@ function newGame() {
 		setGameElements();
 
 		playerNameElem.innerHTML = player.name;
-		 setGamePoints();
+		setGamePoints();
 	}
 
 }
